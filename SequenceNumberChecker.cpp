@@ -59,4 +59,6 @@ int _tmain(int argc, _TCHAR* argv[])
     }
 
     hive.close();
+
+    std::cin.ignore();
 }
