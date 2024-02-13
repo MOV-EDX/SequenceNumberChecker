@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SequenceNumberChecker", "SequenceNumberChecker.vcxproj", "{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}.Debug|x64.ActiveCfg = Debug|x64
+		{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}.Debug|x64.Build.0 = Debug|x64
+		{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}.Debug|x86.ActiveCfg = Debug|Win32
+		{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}.Debug|x86.Build.0 = Debug|Win32
+		{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}.Release|x64.ActiveCfg = Release|x64
+		{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}.Release|x64.Build.0 = Release|x64
+		{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}.Release|x86.ActiveCfg = Release|Win32
+		{22C16AAF-366E-4F5B-BD78-E9E1F9603FD8}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E4289E2-50E4-4DC7-889F-AEEC6504E479}
+	EndGlobalSection
+EndGlobal
