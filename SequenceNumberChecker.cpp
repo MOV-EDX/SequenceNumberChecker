@@ -26,12 +26,17 @@ int _tmain(int argc, _TCHAR* argv[])
     hive.read((char*) &secondary, 4);
 
     if (primary[0] != secondary[0]) {
-        std::wcout << L"Primary and second sequence number mismatch!" << std::endl;
+        std::wcout << L"Primary and secondary sequence number mismatch!" << std::endl;
         std::wcout << L"Performing repairs..." << std::endl;
         
         // Increment the primary sequence number by 1
-        int updatedPrimary = primary[0];
+        uint32_t updatedPrimary = primary[0];
         updatedPrimary++;
+
+        // Wrap around check due to sequence number length being 8-bits
+        if (updatedPrimary == 256) {
+            updatedPrimary = 0;
+        }
 
         // Update the primary sequence number
         hive.seekp(4, std::ios::beg);
@@ -60,6 +65,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
     hive.close();
 
-    std::wcout << L"Repairs have completed..." << std::endl;
+    std::wcout << L"Repairs have completed...press any key to exit" << std::endl;
     std::cin.ignore();
 }
