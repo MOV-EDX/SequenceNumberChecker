@@ -60,5 +60,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
     hive.close();
 
+    std::wcout << L"Repairs have completed..." << std::endl;
     std::cin.ignore();
 }
